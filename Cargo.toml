@@ -1,0 +1,18 @@
+[package]
+name = "bnr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# ahash = "0.8.11"
+jemallocator = "0.5.4"
+memmap = "0.7.0"
+rand = "0.8.5"
+rand_distr = "0.4.3"
+rayon = "1.10.0"
+rustc-hash = "2.0.0"
+simdutf8 = "0.1.4"
+stringzilla = "3.9.1"
+[profile.release]
+lto = true
+codegen-units = 1
