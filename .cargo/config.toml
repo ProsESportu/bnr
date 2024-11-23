@@ -4,4 +4,6 @@ rustflags = [
     "target-cpu=native",
     # "-C",
     # "profile-use=/tmp/merged.profdata",
+    "-C",
+    "symbol-mangling-version=v0",
 ]

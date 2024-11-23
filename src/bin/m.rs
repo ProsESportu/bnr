@@ -1,10 +1,10 @@
 // #![feature(portable_simd)]
 #![deny(elided_lifetimes_in_paths)]
-use jemallocator::Jemalloc;
 use rayon::prelude::*;
 use rustc_hash::FxHashMap;
 use std::io::prelude::*;
 use std::sync::Arc;
+use tikv_jemallocator::Jemalloc;
 #[global_allocator]
 static GLOBAL: Jemalloc = Jemalloc;
 struct Measurement {
